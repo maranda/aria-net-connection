@@ -1,0 +1,25 @@
+{
+  "name": "@xmpp/connection",
+  "description": "Aria Network fork of the XMPP connection for JavaScript",
+  "repository": "github:maranda/aria-net-connection",
+  "homepage": "https://github.com/maranda/aria-net-connection",
+  "bugs": "http://github.com/maranda/aria-net-connection/issues",
+  "version": "0.12.1",
+  "license": "ISC",
+  "keywords": [
+    "XMPP",
+    "connection"
+  ],
+  "dependencies": {
+    "@xmpp/error": "^0.12.1",
+    "@xmpp/events": "^0.12.1",
+    "@xmpp/jid": "^0.12.1",
+    "@xmpp/xml": "^0.12.1"
+  },
+  "engines": {
+    "node": ">= 12.4.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
