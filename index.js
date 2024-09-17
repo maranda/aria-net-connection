@@ -13,7 +13,7 @@ class Connection extends EventEmitter {
   constructor(options = {}) {
     super();
     this.jid = null;
-    this.timeout = 2000;
+    this.timeout = 10000;
     this.options = options;
     this.socketListeners = Object.create(null);
     this.parserListeners = Object.create(null);
