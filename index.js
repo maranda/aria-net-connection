@@ -86,10 +86,10 @@ class Connection extends EventEmitter {
 
   _detachSocket() {
     const { socketListeners, socket } = this;
-    for (const k of Object.getOwnPropertyNames(socketListeners)) {
+    Object.getOwnPropertyNames(socketListeners).forEach((k) => {
       socket.removeListener(k, socketListeners[k]);
       delete socketListeners[k];
-    }
+    });
     this.socket = null;
     return socket;
   }
@@ -168,10 +168,10 @@ class Connection extends EventEmitter {
 
   _detachParser() {
     const listeners = this.parserListeners;
-    for (const k of Object.getOwnPropertyNames(listeners)) {
+    Object.getOwnPropertyNames(listeners).forEach((k) => {
       this.parser.removeListener(k, listeners[k]);
       delete listeners[k];
-    }
+    });
     this.parser = null;
   }
 
